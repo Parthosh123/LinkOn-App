@@ -37,8 +37,8 @@ class WaterTaxPageContainer extends StatelessWidget {
           ],
         ),
         child: Container(
-          height: 100.0,
-          width: 370.0,
+          height: MediaQuery.of(context).size.height * 0.10,
+          width: MediaQuery.of(context).size.width * 0.84,
           decoration: BoxDecoration(
             color: Colors.black,
             borderRadius: BorderRadius.circular(20.0),
@@ -67,16 +67,22 @@ class WaterTaxPageContainer extends StatelessWidget {
                 ),
                 child: CircleAvatar(
                   backgroundColor: Colors.transparent,
-                  radius: 40.0,
-                  child: SvgPicture.asset('images/iconLogo/water-tap-svgrepo-com.svg',height: 40.0,color: Colors.white,),
+                  radius: MediaQuery.of(context).size.height * 0.040,
+                  child: SvgPicture.asset('images/iconLogo/water-tap-svgrepo-com.svg',
+                    height:MediaQuery.of(context).size.height * 0.042,
+                    color: Colors.white,),
                 ),
               ),
               Text(" Water Tax ",
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 20.0,
+                    fontSize: MediaQuery.of(context).size.width * 0.055,
                     fontWeight: FontWeight.w900
-                ),)
+                ),
+              ),
+              SizedBox(
+                  width: MediaQuery.of(context).size.width * 0.03,
+              ),
             ],
           ),
         ),

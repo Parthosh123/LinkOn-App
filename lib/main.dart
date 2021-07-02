@@ -60,9 +60,13 @@ class _SplashScreenState extends State<SplashScreen> with AfterLayoutMixin<Splas
           children: [
             Image(image: AssetImage('images/link-on-logo-only.png'),height: 300.0,),
             SizedBox(
-              height: 20.0,
+              height: MediaQuery.of(context).size.height * 0.06,
             ),
-            Text(" LINK_ON ",style: TextStyle(color: Colors.yellowAccent[700],fontSize: 52.0,fontWeight: FontWeight.w900),),
+            Text(" LINK_ON ",
+              style: TextStyle(
+                  color: Colors.yellowAccent[700],
+                  fontSize: MediaQuery.of(context).size.width * 0.15,
+                  fontWeight: FontWeight.w900),),
           ],
         ),
       ),
@@ -102,20 +106,20 @@ class _IntroScreenState extends State<IntroScreen> {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Container(
-              height: 200.0,
-              width: double.infinity,
+              height:MediaQuery.of(context).size.height * 0.22,
+              width:MediaQuery.of(context).size.width * 1.0,
               color: Colors.transparent,
 
             ),
             Container(
-              height: 250.0,
-              width: double.infinity,
+              height:MediaQuery.of(context).size.height * 0.30,
+              width:MediaQuery.of(context).size.width * 1.0,
               color: Colors.transparent,
               child: SliderCard(),
             ),
             Container(
-              height: 250.0,
-              width: double.infinity,
+              height: MediaQuery.of(context).size.height * 0.25,
+              width:MediaQuery.of(context).size.width * 1.0,
               color: Colors.transparent,
               child: Padding(
                 padding: EdgeInsets.symmetric(horizontal: 35.0),
@@ -126,18 +130,18 @@ class _IntroScreenState extends State<IntroScreen> {
                       "Link Your Life",
                       style: TextStyle(
                           color: Colors.yellowAccent,
-                          fontSize: 28.0,
+                          fontSize: MediaQuery.of(context).size.width * 0.062,
                           fontWeight: FontWeight.w900),
                     ),
                     SizedBox(
-                      height: 10.0,
+                      height: MediaQuery.of(context).size.height * 0.010,
                     ),
                     Text(
                       "LINK_ON app makes you to simply E- Services all in one Destination",
-                      style: TextStyle(color: Colors.white70,fontSize: 12.0),
+                      style: TextStyle(color: Colors.white70,fontSize: MediaQuery.of(context).size.width * 0.030,),
                     ),
                     SizedBox(
-                      height: 40.0,
+                      height: MediaQuery.of(context).size.height * 0.030,
                     ),
                     GestureDetector( onTap: (){
                       Navigator.pushAndRemoveUntil(context, MaterialPageRoute(builder: (context)=>HomePage()),(e) => false);
@@ -149,14 +153,15 @@ class _IntroScreenState extends State<IntroScreen> {
                             shape: BoxShape.circle,
                             child: CircleAvatar(
                               backgroundColor: Colors.grey[500],
-                              radius: 35.0,
+                              radius: MediaQuery.of(context).size.height * 0.040,
                             ),
                           ),
                           Padding(
                             padding: EdgeInsets.symmetric(horizontal:25.0),
                             child: Text(
                               "  Get Started",
-                              style: TextStyle(color: Colors.white,fontSize: 28.0,fontWeight: FontWeight.bold),
+                              style: TextStyle(color: Colors.white,fontSize: MediaQuery.of(context).size.width * 0.052,
+                                  fontWeight: FontWeight.bold),
                             ),
                           ),
                         ],

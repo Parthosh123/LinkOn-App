@@ -58,7 +58,7 @@ class HomePage extends StatelessWidget {
                     "LINK_ON",
                     style: TextStyle(
                         color: Colors.grey[300],
-                        fontSize: 25.0,
+                        fontSize: MediaQuery.of(context).size.width * 0.07,
                         fontWeight: FontWeight.bold),
                   ),
                 ),
@@ -69,7 +69,7 @@ class HomePage extends StatelessWidget {
                     children: [
                       UtilityHomePageButton(),
                       SizedBox(
-                        width: 20.0,
+                        width: MediaQuery.of(context).size.width * 0.035,
                       ),
                       EducationalHomePageButton(),
                     ],
@@ -83,23 +83,23 @@ class HomePage extends StatelessWidget {
                 Padding(
                   padding: EdgeInsets.symmetric(horizontal: 20.0),
                   child: Container(
-                    height: 50.0,
-                    width: double.infinity,
+                    height: MediaQuery.of(context).size.height * 0.05,
+                    width: MediaQuery.of(context).size.width * 1.0,
                     color: Colors.transparent,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
                         Image(
                           image: AssetImage('images/mylogo (3).jpeg'),
-                          height: 40.0,
+                          height: MediaQuery.of(context).size.height * 0.045,
                         ),
                         Image(
                           image: AssetImage('images/mylogo (1).jpeg'),
-                          height: 40.0,
+                          height: MediaQuery.of(context).size.height * 0.045,
                         ),
                         Image(
                           image: AssetImage('images/mylogo (2).jpeg'),
-                          height: 40.0,
+                          height: MediaQuery.of(context).size.height * 0.045,
                         )
                       ],
                     ),

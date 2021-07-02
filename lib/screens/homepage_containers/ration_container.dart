@@ -47,8 +47,8 @@ class RationPageContainer extends StatelessWidget {
           child: Stack(
             children: [
               Container(
-                height: 200.0,
-                width: 400.0,
+                height: MediaQuery.of(context).size.height * 0.22,
+                width: MediaQuery.of(context).size.width * 0.93,
                 decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(20.0),
@@ -65,13 +65,13 @@ class RationPageContainer extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SizedBox(
-                      height: 2.0,
+                      height: MediaQuery.of(context).size.height * 0.002,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         SizedBox(
-                          width: 18.0,
+                          width: MediaQuery.of(context).size.width * 0.05,
                         ),
                         Container(
                           decoration: BoxDecoration(
@@ -84,21 +84,21 @@ class RationPageContainer extends StatelessWidget {
                               )),
                           child: CircleAvatar(
                             backgroundColor: Colors.transparent,
-                            radius: 40.0,
+                            radius:  MediaQuery.of(context).size.height * 0.042,
                             child: SvgPicture.asset(
                               'images/govtLogo/TamilNadu_Logo.svg',
-                              height: 50.0,
+                                height: MediaQuery.of(context).size.height * 0.054
                             ),
                           ),
                         ),
                         SizedBox(
-                          width: 30.0,
+                          width: MediaQuery.of(context).size.width * 0.07,
                         ),
                         Text(
                           "Ration Services ",
                           style: TextStyle(
                               color: Colors.white,
-                              fontSize: 22.0,
+                              fontSize:  MediaQuery.of(context).size.width * 0.052,
                               fontWeight: FontWeight.w900),
                         ),
                       ],
@@ -114,27 +114,27 @@ class RationPageContainer extends StatelessWidget {
                               "Apply New ",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 15.0,
+                                fontSize: MediaQuery.of(context).size.width * 0.035,
                               ),
                             ),
                             SizedBox(
-                              height: 4.0,
+                              height: MediaQuery.of(context).size.height * 0.004,
                             ),
                             Text(
                               "Update ",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 15.0,
+                                fontSize:MediaQuery.of(context).size.width * 0.035,
                               ),
                             ),
                             SizedBox(
-                              height: 4.0,
+                              height: MediaQuery.of(context).size.height * 0.004,
                             ),
                             Text(
                               "Reprint ",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 15.0,
+                                fontSize: MediaQuery.of(context).size.width * 0.035,
                               ),
                             ),
                           ],
@@ -152,13 +152,13 @@ class RationPageContainer extends StatelessWidget {
                             "TNPDS ",
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 15.0,
+                              fontSize: MediaQuery.of(context).size.width * 0.035,
                             ),
                           ),
                         ),
                         Container(
-                          height: 50.0,
-                          width: 120.0,
+                          height: MediaQuery.of(context).size.height * 0.05,
+                          width: MediaQuery.of(context).size.width * 0.32,
                           decoration: BoxDecoration(
                             gradient: LinearGradient(colors: [
                               Colors.deepOrange,
@@ -180,7 +180,7 @@ class RationPageContainer extends StatelessWidget {
                                 "Enter ",
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 15.0,
+                                  fontSize: MediaQuery.of(context).size.width * 0.035,
                                 ),
                               ),
                               Icon(Icons.arrow_forward_sharp)

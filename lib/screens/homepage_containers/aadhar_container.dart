@@ -48,8 +48,8 @@ class AadhaarPageContainer extends StatelessWidget {
           child: Stack(
             children: [
               Container(
-                height: 200.0,
-                width: 400.0,
+                height: MediaQuery.of(context).size.height * 0.22,
+                width: MediaQuery.of(context).size.width * 0.93,
                 decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(20.0),
@@ -66,12 +66,12 @@ class AadhaarPageContainer extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SizedBox(
-                      height: 2.0,
+                      height: MediaQuery.of(context).size.height * 0.002,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
-                        SizedBox(width: 20.0),
+                        SizedBox(width: MediaQuery.of(context).size.width * 0.05,),
                         Container(
                           decoration: BoxDecoration(
                             shape: BoxShape.circle,
@@ -84,19 +84,19 @@ class AadhaarPageContainer extends StatelessWidget {
                           ),
                           child: CircleAvatar(
                             backgroundColor: Colors.transparent,
-                            radius: 40.0,
+                            radius: MediaQuery.of(context).size.height * 0.042,
                             child: SvgPicture.asset(
                               'images/govtLogo/Aadhaar_Logo.svg',
-                              height: 35.0,
+                                height: MediaQuery.of(context).size.height * 0.038
                             ),
                           ),
                         ),
-                        SizedBox(width: 30.0),
+                        SizedBox(width: MediaQuery.of(context).size.width * 0.07,),
                         Text(
                           "Aadhaar Services ",
                           style: TextStyle(
                               color: Colors.white,
-                              fontSize: 22.0,
+                              fontSize: MediaQuery.of(context).size.width * 0.052,
                               fontWeight: FontWeight.w900),
                         ),
                       ],
@@ -112,27 +112,27 @@ class AadhaarPageContainer extends StatelessWidget {
                               "Update ",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 15.0,
+                                fontSize: MediaQuery.of(context).size.width * 0.035,
                               ),
                             ),
                             SizedBox(
-                              height: 4.0,
+                                height: MediaQuery.of(context).size.height * 0.004,
                             ),
                             Text(
                               "Download ",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 15.0,
+                                fontSize: MediaQuery.of(context).size.width * 0.035,
                               ),
                             ),
                             SizedBox(
-                              height: 4.0,
+                              height: MediaQuery.of(context).size.height * 0.004,
                             ),
                             Text(
                               "KYC Details ",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 15.0,
+                                fontSize: MediaQuery.of(context).size.width * 0.035,
                               ),
                             ),
                           ],
@@ -150,13 +150,13 @@ class AadhaarPageContainer extends StatelessWidget {
                             "UIDAI ",
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 15.0,
+                              fontSize: MediaQuery.of(context).size.width * 0.035,
                             ),
                           ),
                         ),
                         Container(
-                          height: 50.0,
-                          width: 120.0,
+                          height: MediaQuery.of(context).size.height * 0.05,
+                          width: MediaQuery.of(context).size.width * 0.32,
                           decoration: BoxDecoration(
                             color: Colors.blue,
                             borderRadius: BorderRadius.only(
@@ -177,7 +177,7 @@ class AadhaarPageContainer extends StatelessWidget {
                                 "Enter ",
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 15.0,
+                                  fontSize: MediaQuery.of(context).size.width * 0.035,
                                 ),
                               ),
                               Icon(Icons.arrow_forward_sharp)

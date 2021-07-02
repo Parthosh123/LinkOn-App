@@ -48,8 +48,8 @@ class PanPageContainer extends StatelessWidget {
           child: Stack(
             children: [
               Container(
-                height: 200.0,
-                width: 400.0,
+                height: MediaQuery.of(context).size.height * 0.22,
+                width: MediaQuery.of(context).size.width * 0.93,
                 decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(20.0),
@@ -66,13 +66,13 @@ class PanPageContainer extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SizedBox(
-                      height: 2.0,
+                      height: MediaQuery.of(context).size.height * 0.004,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         SizedBox(
-                          width: 19.0,
+                          width: MediaQuery.of(context).size.width * 0.04,
                         ),
                         Container(
                           decoration: BoxDecoration(
@@ -85,21 +85,21 @@ class PanPageContainer extends StatelessWidget {
                               )),
                           child: CircleAvatar(
                             backgroundColor: Colors.transparent,
-                            radius: 40.0,
+                            radius: MediaQuery.of(context).size.height * 0.042,
                             child: SvgPicture.asset(
                               'images/govtLogo/pan_logo.svg',
-                              height: 40.0,
+                              height: MediaQuery.of(context).size.height * 0.042,
                             ),
                           ),
                         ),
                         SizedBox(
-                          width: 24.0,
+                          width: MediaQuery.of(context).size.width * 0.06,
                         ),
                         Text(
                           "PAN Services ",
                           style: TextStyle(
                               color: Colors.white,
-                              fontSize: 22.0,
+                              fontSize: MediaQuery.of(context).size.width * 0.052,
                               fontWeight: FontWeight.w900),
                         ),
                       ],
@@ -115,27 +115,27 @@ class PanPageContainer extends StatelessWidget {
                               "Apply New ",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 15.0,
+                                fontSize: MediaQuery.of(context).size.width * 0.035,
                               ),
                             ),
                             SizedBox(
-                              height: 4.0,
+                              height: MediaQuery.of(context).size.height * 0.004,
                             ),
                             Text(
                               "Update ",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 15.0,
+                                fontSize:  MediaQuery.of(context).size.width * 0.035,
                               ),
                             ),
                             SizedBox(
-                              height: 4.0,
+                              height: MediaQuery.of(context).size.height * 0.004,
                             ),
                             Text(
                               "Tax Payer Services ",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 15.0,
+                                fontSize:  MediaQuery.of(context).size.width * 0.035,
                               ),
                             ),
                           ],
@@ -153,13 +153,13 @@ class PanPageContainer extends StatelessWidget {
                             "Income Tax Department ",
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 15.0,
+                              fontSize: MediaQuery.of(context).size.width * 0.035,
                             ),
                           ),
                         ),
                         Container(
-                          height: 50.0,
-                          width: 120.0,
+                          height: MediaQuery.of(context).size.height * 0.05,
+                          width: MediaQuery.of(context).size.width * 0.32,
                           decoration: BoxDecoration(
                             gradient: LinearGradient(colors: [
                               Colors.tealAccent,
@@ -181,7 +181,7 @@ class PanPageContainer extends StatelessWidget {
                                 "Enter ",
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 15.0,
+                                  fontSize: MediaQuery.of(context).size.width * 0.035,
                                 ),
                               ),
                               Icon(Icons.arrow_forward_sharp)

@@ -12,8 +12,8 @@ class EducationalHomePageButton extends StatelessWidget {
     },
       child: Container(
         margin: EdgeInsets.only(right: 20.0),
-        height: 85.0,
-        width: 180.0,
+        height: MediaQuery.of(context).size.height * 0.095,
+        width: MediaQuery.of(context).size.width * 0.43,
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(20.0),
             gradient: LinearGradient(
@@ -30,15 +30,21 @@ class EducationalHomePageButton extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: [
-            CircleAvatar( radius: 30.0,
+            CircleAvatar( radius:MediaQuery.of(context).size.height * 0.035,
                 backgroundColor: Colors.white70.withOpacity(0.5),
                 child: SvgPicture.asset('images/iconLogo/pencil-svgrepo-com.svg',height: 30.0,)),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Text('Educational ',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 15.0),),
-                Text('Services ',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontSize: 15.0),)
+                Text('Educational ',
+                  style: TextStyle(color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize:MediaQuery.of(context).size.width * 0.035),),
+                Text('Services ',
+                  style: TextStyle(color: Colors.white,
+                      fontWeight: FontWeight.bold,
+                      fontSize:MediaQuery.of(context).size.width * 0.035),)
               ],
             ),
           ],

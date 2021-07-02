@@ -11,11 +11,8 @@ class SkillSetScreen extends StatelessWidget {
         backgroundColor: Colors.blueGrey[900],
       ),
       body: Container(
-        height: MediaQuery
-            .of(context)
-            .size
-            .height * 1.0,
-        width: double.infinity,
+        height: MediaQuery.of(context).size.height * 1.0,
+        width: MediaQuery.of(context).size.width* 1.0,
         decoration: BoxDecoration(
             gradient: LinearGradient(
               begin: Alignment.topLeft,
@@ -39,10 +36,13 @@ class SkillSetScreen extends StatelessWidget {
               child: Row(
                 children: [
                   Text('Skill  ',
-                    style: TextStyle(fontSize: 30.0, color: Colors.white),),
+                    style: TextStyle(fontSize: MediaQuery.of(context).size.width * 0.080,
+                        color: Colors.white),),
                   Text('Set',
-                    style: TextStyle(fontSize: 30.0, color: Colors.white),),
-                  Icon(Icons.star_border_purple500_outlined, size: 60.0,color: Colors.white,),
+                    style: TextStyle(fontSize: MediaQuery.of(context).size.width * 0.080,
+                        color: Colors.white),),
+                  Icon(Icons.star_border_purple500_outlined, size: MediaQuery.of(context).size.height * 0.060,
+                    color: Colors.white,),
                 ],
 
               ),
@@ -55,7 +55,7 @@ class SkillSetScreen extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => WebViewPage(title: "TN Skill Set ",url: "https://www.tnskill.tn.gov.in/ ",)));
                 },
                 child: Container(
-                  height: 80.0,
+                  height: MediaQuery.of(context).size.height * 0.090,
                   decoration: BoxDecoration(
                     color: Colors.grey.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(20.0),
@@ -64,8 +64,11 @@ class SkillSetScreen extends StatelessWidget {
                     padding: EdgeInsets.all(10.0),
                     child: ListTile(
                       title: Text(
-                        'TN Skill Set', style: TextStyle(fontSize: 18.0,color: Colors.white),),
-                      trailing: Icon(Icons.arrow_forward, size: 40.0,color: Colors.white),
+                        'TN Skill Set', style: TextStyle(fontSize: MediaQuery.of(context).size.width * 0.040,
+                          color: Colors.white),),
+                      trailing: Icon(Icons.arrow_forward,
+                          size: MediaQuery.of(context).size.width * 0.080,
+                          color: Colors.white),
                     ),
                   ),
                 ),
@@ -79,7 +82,7 @@ class SkillSetScreen extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => WebViewPage(title: "ICT Academy Skill Set ",url: "http://www.ictacademy.in/pages/Index.aspx",)));
                 },
                 child: Container(
-                  height: 80.0,
+                  height: MediaQuery.of(context).size.height * 0.090,
                   decoration: BoxDecoration(
                     color: Colors.grey.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(20.0),
@@ -88,8 +91,10 @@ class SkillSetScreen extends StatelessWidget {
                     padding: EdgeInsets.all(10.0),
                     child: ListTile(
                       title: Text(
-                        'ICT Academy Skill Set', style: TextStyle(fontSize: 18.0,color: Colors.white),),
-                      trailing: Icon(Icons.arrow_forward, size: 40.0,color: Colors.white),
+                        'ICT Academy Skill Set', style: TextStyle(fontSize: MediaQuery.of(context).size.width * 0.040,
+                          color: Colors.white),),
+                      trailing: Icon(Icons.arrow_forward, size:MediaQuery.of(context).size.width * 0.080,
+                          color: Colors.white),
                     ),
                   ),
                 ),
@@ -103,7 +108,7 @@ class SkillSetScreen extends StatelessWidget {
                       MaterialPageRoute(builder: (context) => WebViewPage(title: "Digital Library ",url: "https://ndl.iitkgp.ac.in/  ",)));
                 },
                 child: Container(
-                  height: 80.0,
+                  height:MediaQuery.of(context).size.height * 0.090,
                   decoration: BoxDecoration(
                     color: Colors.grey.withOpacity(0.2),
                     borderRadius: BorderRadius.circular(20.0),
@@ -111,8 +116,10 @@ class SkillSetScreen extends StatelessWidget {
                   child: Padding(
                     padding: EdgeInsets.all(10.0),
                     child: ListTile(
-                      title: Text('Digital Library', style: TextStyle(fontSize: 18.0,color: Colors.white),),
-                      trailing: Icon(Icons.arrow_forward, size: 40.0,color: Colors.white),
+                      title: Text('Digital Library', style: TextStyle(fontSize: MediaQuery.of(context).size.width * 0.040,
+                          color: Colors.white),),
+                      trailing: Icon(Icons.arrow_forward, size: MediaQuery.of(context).size.width * 0.080,
+                          color: Colors.white),
                     ),
                   ),
                 ),

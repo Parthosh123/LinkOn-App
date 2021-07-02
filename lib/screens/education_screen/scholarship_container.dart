@@ -37,8 +37,8 @@ class ScholarshipPageContainer extends StatelessWidget {
           ],
         ),
         child: Container(
-          height: 280.0,
-          width: 160.0,
+          height: MediaQuery.of(context).size.height * 0.30,
+          width: MediaQuery.of(context).size.width * 0.38,
           decoration: BoxDecoration(
               color: Colors.black,
               borderRadius: BorderRadius.only(topLeft: Radius.circular(20.0),bottomLeft:Radius.circular(20.0) ),
@@ -67,14 +67,16 @@ class ScholarshipPageContainer extends StatelessWidget {
                 ),
                 child: CircleAvatar(
                   backgroundColor: Colors.transparent,
-                  radius: 50.0,
-                  child: SvgPicture.asset('images/iconLogo/book-svgrepo-com.svg',height: 40.0,color: Colors.white,),
+                  radius:  MediaQuery.of(context).size.height * 0.052,
+                  child: SvgPicture.asset('images/iconLogo/book-svgrepo-com.svg',
+                    height: MediaQuery.of(context).size.height * 0.042,
+                    color: Colors.white,),
                 ),
               ),
               Text(" ScholarShip ",
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 18.0,
+                    fontSize: MediaQuery.of(context).size.width * 0.042,
                     fontWeight: FontWeight.w900
                 ),)
             ],

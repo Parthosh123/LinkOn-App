@@ -47,8 +47,8 @@ class VoterPageContainer extends StatelessWidget {
           child: Stack(
             children: [
               Container(
-                height: 200.0,
-                width: 400.0,
+                height: MediaQuery.of(context).size.height * 0.22,
+                width: MediaQuery.of(context).size.width * 0.93,
                 decoration: BoxDecoration(
                     color: Colors.black,
                     borderRadius: BorderRadius.circular(20.0),
@@ -65,13 +65,13 @@ class VoterPageContainer extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     SizedBox(
-                      height: 2.0,
+                      height: MediaQuery.of(context).size.height * 0.004,
                     ),
                     Row(
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         SizedBox(
-                          width: 18.0,
+                          width: MediaQuery.of(context).size.width * 0.05,
                         ),
                         Container(
                           decoration: BoxDecoration(
@@ -84,21 +84,21 @@ class VoterPageContainer extends StatelessWidget {
                               )),
                           child: CircleAvatar(
                             backgroundColor: Colors.transparent,
-                            radius: 40.0,
+                            radius: MediaQuery.of(context).size.height * 0.042,
                             child: SvgPicture.asset(
                               'images/govtLogo/Voter.svg',
-                              height: 50.0,
+                                height: MediaQuery.of(context).size.height * 0.050,
                             ),
                           ),
                         ),
                         SizedBox(
-                          width: 22.0,
+                          width: MediaQuery.of(context).size.width * 0.04,
                         ),
                         Text(
                           "Voter ID Services ",
                           style: TextStyle(
                               color: Colors.white,
-                              fontSize: 22.0,
+                              fontSize:MediaQuery.of(context).size.width * 0.052,
                               fontWeight: FontWeight.w900),
                         ),
                       ],
@@ -114,27 +114,27 @@ class VoterPageContainer extends StatelessWidget {
                               "Apply New ",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 15.0,
+                                fontSize: MediaQuery.of(context).size.width * 0.035,
                               ),
                             ),
                             SizedBox(
-                              height: 4.0,
+                              height: MediaQuery.of(context).size.height * 0.004,
                             ),
                             Text(
                               "Search Name ",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 15.0,
+                                fontSize: MediaQuery.of(context).size.width * 0.035,
                               ),
                             ),
                             SizedBox(
-                              height: 4.0,
+                              height: MediaQuery.of(context).size.height * 0.004,
                             ),
                             Text(
                               "NRI Voter Services ",
                               style: TextStyle(
                                 color: Colors.white,
-                                fontSize: 15.0,
+                                fontSize: MediaQuery.of(context).size.width * 0.035,
                               ),
                             ),
                           ],
@@ -152,13 +152,13 @@ class VoterPageContainer extends StatelessWidget {
                             "Election Commission of India ",
                             style: TextStyle(
                               color: Colors.white,
-                              fontSize: 15.0,
+                              fontSize: MediaQuery.of(context).size.width * 0.032,
                             ),
                           ),
                         ),
                         Container(
-                          height: 50.0,
-                          width: 120.0,
+                          height: MediaQuery.of(context).size.height * 0.05,
+                          width: MediaQuery.of(context).size.width * 0.32,
                           decoration: BoxDecoration(
                             gradient: LinearGradient(colors: [
                               Colors.pinkAccent,
@@ -180,7 +180,7 @@ class VoterPageContainer extends StatelessWidget {
                                 "Enter ",
                                 style: TextStyle(
                                   color: Colors.white,
-                                  fontSize: 15.0,
+                                  fontSize: MediaQuery.of(context).size.width * 0.035,
                                 ),
                               ),
                               Icon(Icons.arrow_forward_sharp)

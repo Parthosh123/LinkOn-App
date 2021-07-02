@@ -37,8 +37,8 @@ class VehiclePageContainer extends StatelessWidget {
           ],
         ),
         child: Container(
-          height: 200.0,
-          width: 200.0,
+          height: MediaQuery.of(context).size.height * 0.22,
+          width: MediaQuery.of(context).size.width * 0.45,
           decoration: BoxDecoration(
               color: Colors.black,
               borderRadius: BorderRadius.only(topRight: Radius.circular(20.0), ),
@@ -66,14 +66,15 @@ class VehiclePageContainer extends StatelessWidget {
                 ),
                 child: CircleAvatar(
                   backgroundColor: Colors.transparent,
-                  radius: 50.0,
-                  child: SvgPicture.asset('images/iconLogo/car-svgrepo-com.svg',height: 40.0,color: Colors.white,),
+                  radius: MediaQuery.of(context).size.height * 0.052,
+                  child: SvgPicture.asset('images/iconLogo/car-svgrepo-com.svg',
+                    height: MediaQuery.of(context).size.height * 0.042,color: Colors.white,),
                 ),
               ),
               Text(" Vehicles Service ",
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 18.0,
+                    fontSize: MediaQuery.of(context).size.width * 0.042,
                     fontWeight: FontWeight.w900
                 ),)
             ],

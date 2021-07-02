@@ -33,14 +33,14 @@ class UtilityGeneralPage extends StatelessWidget {
           child: Column(
             children: [
               SizedBox(
-                height: 15.0,
+                height: MediaQuery.of(context).size.height * 0.020,
               ),
               Padding(
                 padding: MediaQuery.of(context).padding*1.0,
                 child: Row(
                   children: [
                     SizedBox(
-                      width: 10.0,
+                      width: MediaQuery.of(context).size.width * 0.020,
                     ),
                     GestureDetector(
                       onTap: () {
@@ -48,34 +48,34 @@ class UtilityGeneralPage extends StatelessWidget {
                       },
                       child: Icon(
                         Icons.arrow_back,
-                        size: 35.0,
+                        size:MediaQuery.of(context).size.width * 0.090,
                         color: Colors.yellow,
                       ),
                     ),
                     SizedBox(
-                      width: 10.0,
+                      width: MediaQuery.of(context).size.width * 0.020,
                     ),
                     Text(
                       " Utility Services ",
                       style: TextStyle(
                           color: Colors.yellow,
-                          fontSize: 25.0,
+                          fontSize: MediaQuery.of(context).size.width * 0.06,
                           fontWeight: FontWeight.w900),
                     )
                   ],
                 ),
               ),
               SizedBox(
-                height: 10.0,
+                height: MediaQuery.of(context).size.height * 0.015,
               ),
               Text(
                 "Pay your Utility Bills or Manage your services",
                 style: TextStyle(
                   color: Colors.white70,
-                  fontSize: 12.0,
+                  fontSize: MediaQuery.of(context).size.width * 0.028,
                 ),
               ),SizedBox(
-                height:  20.0,
+                height: MediaQuery.of(context).size.height * 0.035,
               ),
               Padding(
                 padding: EdgeInsets.symmetric(horizontal: 20.0),
@@ -86,23 +86,23 @@ class UtilityGeneralPage extends StatelessWidget {
                       children: [
                         ElectricityPageContainer(),
                         SizedBox(
-                          height: 10.0,
+                          height: MediaQuery.of(context).size.height * 0.010,
                         ),
                         TaxPayPageContainer(),
                       ],
                     ),
                     SizedBox(
-                      width: 10.0,
+                      width: MediaQuery.of(context).size.width * 0.022,
                     ),
                     Column(
                       children: [
                         RevenuePageContainer(),
                         SizedBox(
-                          height: 10.0,
+                          height:  MediaQuery.of(context).size.height * 0.010,
                         ),
                         VehiclePageContainer(),
                         SizedBox(
-                          height: 10.0,
+                          height:  MediaQuery.of(context).size.height * 0.010,
                         ),
                         BusBookingPageContainer(),
                       ],
@@ -111,7 +111,7 @@ class UtilityGeneralPage extends StatelessWidget {
                 ),
               ),
               SizedBox(
-                height: 20.0,
+                height: MediaQuery.of(context).size.height * 0.030,
               ),
               WaterTaxPageContainer(),
             ],

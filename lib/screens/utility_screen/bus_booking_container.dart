@@ -37,8 +37,8 @@ class BusBookingPageContainer extends StatelessWidget {
           ],
         ),
         child: Container(
-          height: 150.0,
-          width: 200.0,
+          height: MediaQuery.of(context).size.height * 0.15,
+          width: MediaQuery.of(context).size.width * 0.45,
           decoration: BoxDecoration(
               color: Colors.black,
               borderRadius: BorderRadius.only(bottomRight:Radius.circular(20.0) ),
@@ -67,14 +67,16 @@ class BusBookingPageContainer extends StatelessWidget {
                 ),
                 child: CircleAvatar(
                   backgroundColor: Colors.transparent,
-                  radius: 50.0,
-                  child: SvgPicture.asset('images/iconLogo/tourist-bus-svgrepo-com.svg',height: 50.0,color: Colors.white,),
+                  radius:MediaQuery.of(context).size.height * 0.048,
+                  child: SvgPicture.asset('images/iconLogo/tourist-bus-svgrepo-com.svg',
+                    height: MediaQuery.of(context).size.height * 0.052,
+                    color: Colors.white,),
                 ),
               ),
               Text("Bus Booking ",
                 style: TextStyle(
                     color: Colors.white,
-                    fontSize: 18.0,
+                    fontSize: MediaQuery.of(context).size.width * 0.042,
                     fontWeight: FontWeight.w900
                 ),)
             ],
