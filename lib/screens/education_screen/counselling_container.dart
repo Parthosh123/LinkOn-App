@@ -8,8 +8,8 @@ class CounsellingPAgeContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector( onTap: (){
-      Navigator.push(context, MaterialPageRoute(builder: (context)=>WebViewPage(title: "Counselling ",url: "https://www.tneaonline.org/ ",)));
-
+      Navigator.push(context, MaterialPageRoute(builder: (context)=>WebViewPage(title: "Counselling ",url: "https://www.shiksha.com/b-tech/tnea-exam-counselling ",)));
+      // https://www.tneaonline.org/
     },
       child: Container(
         decoration: BoxDecoration(

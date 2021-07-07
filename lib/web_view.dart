@@ -48,6 +48,14 @@ class _WebViewPageState extends State<WebViewPage> {
               isLoading = false;
             });
           },
+          navigationDelegate: (request) {
+            if (request.url.contains('connect-success')) {
+              print('connection successful');
+            } else if (request.url.contains('connect-fail')) {
+              Text("Connection Failed");
+            }
+            return NavigationDecision.navigate;
+          },
 
         ),
           isLoading ? Center( child: CircularProgressIndicator(),)

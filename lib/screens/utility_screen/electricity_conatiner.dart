@@ -8,7 +8,7 @@ class ElectricityPageContainer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GestureDetector( onTap: (){
-      Navigator.push(context, MaterialPageRoute(builder: (context)=>WebViewPage(title: "Electricity ",url: "https://www.tnebnet.org/atm/login ",)));
+      Navigator.push(context, MaterialPageRoute(builder: (context)=>WebViewPage(title: "Electricity ",url: "https://www.tnebnet.org/awp/login",)));
 
     },
       child: Container(
